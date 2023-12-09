@@ -204,7 +204,7 @@ jobs:
         run: mvn clean install
   
       - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@v2
+        uses: github/codeql-action/analyze@v2.22.9
         with:
           category: "/language:${{ matrix.language }}"
 
